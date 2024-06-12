@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratik - Form Elemanları Kullanımı</title>
+  </head>
+  <body>
+    <form>
+      <label for="ad">Ad:</label><br />
+      <input type="text" name="ad" id="ad" /><br />
+
+      <label for="soyad">Soyad:</label><br />
+      <input type="text" name="soyad" id="soyad" /><br />
+
+      <label for="email">email</label><br />
+      <input type="email" name="email" id="email" /><br />
+
+      <label for="pwd"> Şifre</label><br />
+      <input type="password" name="Şifre" id="pwd" /><br />
+
+      <p>
+        Cinsiyet:
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Erkek</label>
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Kadın</label>
+      </p>
+
+      <label for="fruit">Favori Meyve Seçiniz</label><br />
+      <select name="fruit" id="fruit">
+        <option value="Elma">Elma</option>
+        <option value="Muz">Muz</option>
+        <option value="Üzüm">Üzüm</option></select
+      ><br />
+
+      <label for="text" id="mesaj">Mesaj</label><br />
+      <textarea name="textarea" id="mesaj" rows="8" cols="40"></textarea><br />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>

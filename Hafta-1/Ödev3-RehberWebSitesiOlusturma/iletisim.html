@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+
+      nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #0073e6;
+      }
+
+      h2 {
+        color: #00509e;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul li {
+        margin: 5px 0;
+      }
+
+      form p {
+        margin: 10px 0;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      input[type="submit"] {
+        background-color: #0073e6;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #00509e;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">AnaSayfa</a>
+      <a href="hakkinda.html">Hakkında</a>
+      <a href="markalar.html">Markalar</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+    
+    <h2>Bizimle iletişime geçin</h2>
+    
+    <ul>
+      <li>Telefon: +90 212 830 44 55</li>
+      <li>Email: satis@adı.com</li>
+    </ul>
+    
+    <form>
+      <p>
+        <label for="ad">Ad:</label>
+        <input type="text" name="ad" id="ad" required />
+      </p>
+
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+      </p>
+
+      <p>
+        <label for="telefon">Telefon:</label>
+        <input type="tel" name="telefon" id="telefon" required />
+      </p>
+
+      <input type="submit" value="Gönder" />
+    </form>
+  </body>
+</html>

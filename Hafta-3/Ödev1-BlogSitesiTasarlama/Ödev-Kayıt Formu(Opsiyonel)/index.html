@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayıt Formu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Kayıt Formu</h1>
+      <p>Öğrenci Kayıt Formu</p>
+    </header>
+    <main>
+      <section>
+        <form id="survey-form">
+          <div>
+            <label for="name">Ad Soyad:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Adınızı giriniz"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email adresinizi giriniz"
+              required
+            />
+          </div>
+          <div>
+            <label for="number">Yaş:</label>
+            <input
+              type="number"
+              id="number"
+              name="number"
+              max="99"
+              min="0"
+              placeholder="Yaşınızı giriniz"
+              required
+            />
+          </div>
+          <div>
+            <label for="gender">Cinsiyet</label>
+            <select name="gender" id="gender" placeholder="Seçiniz">
+              <option value="Erkek">Erkek</option>
+              <option value="Kadın">Kadın</option>
+            </select>
+          </div>
+          <div>
+            <p>Hangi sosyal medya hesaplarını kullanıyorsunuz?</p>
+            <input type="checkbox" name="instagram" id="instagram" />
+            <label for="instagram">instagram</label>
+          </div>
+          <div>
+            <input type="checkbox" name="facebook" id="facebook" />
+            <label for="facebook">facebook</label>
+          </div>
+          <div>
+            <p>Üyeliği onaylıyorum</p>
+            <input type="radio" id="no" name="choose" value="no" required />
+            <label for="no">Hayır</label>
+            <input type="radio" id="yes" name="choose" value="yes" required />
+            <label for="yes">Evet</label>
+          </div>
+          <div>
+            <label for="text" id="mesaj">Mesaj</label><br />
+            <textarea name="textarea" id="mesaj" rows="8" cols="40"></textarea>
+          </div>
+          <div>
+            <input type="submit" id="submit" />
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
